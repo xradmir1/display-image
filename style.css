@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(22, 22, 168, 1) 35%, rgba(22, 107, 168, 1) 50%, rgba(22, 22, 168, 1) 65%, rgba(2, 0, 36, 1) 100%);
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: white;
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #1f314f;
+    margin: 1rem 0;
+    padding: 0 10px;
+}
+
+p {
+    font-size: 15px;
+    color: #7d889e;
+    margin-bottom: 1rem;
+    padding: 0 15px;
+}
