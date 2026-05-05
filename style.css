@@ -7,18 +7,19 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
     font-family: sans-serif;
 }
-
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
     height: 80vh;
     background-color: rgba(15, 150, 180, 0.5);
     box-shadow: 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: translate(0, -8%);
 }
-
 .card {
+    position : relative;
     background-color: white;
     width: 20rem;
     padding: 1rem;
@@ -29,22 +30,32 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-.qr-code {
+.upload {
+    position: absolute;
+    display: flex;
+    transform: translate(0, 295%);
+    scale: 0.5;
+    border-radius: 50%;
+}
+.display-image {
     width: 100%;
     border-radius: 1rem;
 }
-
 h1 {
     font-size: 1.5rem;
     color: #1f314f;
     margin: 1rem 0;
     padding: 0 10px;
 }
-
 p {
     font-size: 15px;
     color: #7d889e;
     margin-bottom: 1rem;
     padding: 0 15px;
+}
+#image-input {
+    display: none;
+}
+#upload-icon {
+    scale: 1.3;
 }

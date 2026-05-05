@@ -6,18 +6,22 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>QR code component</title>
+  <title>Display Image</title>
 
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <img src="./images/image-qr-code.png" class="qr-code">
-      <h1 id = "title"> Improve your front-end skills by building projects</h1>
-      <p id = "description"> Scan the QR code to visit Frontend Mentor
-          and take your coding skills to the next level!</p>
+      <img src="./images/image-qr-code.png" id="placeholder-image" class="display-image"">
+      <h1 id = "title"> Upload your own image!</h1>
+      <p id = "description"> Click upload to upload an image</p>
+    </div>
+    <div class="upload">
+      <img src="images/upload-icon.png" alt="Upload" id="upload-icon">
+      <input type="file" id="image-input" accept="image/*">
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
