@@ -19,10 +19,10 @@
   <p align="center">
     A static website created using HTML/CSS/JS that lets you view your images in fullscreen.
     <br />
-    <a href="https://github.com/xradmir1/display-image"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/xradmir1/display-image"><strong>Explore the repo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/xradmir1/display-image">View Demo</a>
+    <a href="https://xradmir1.github.io/display-image/">View Demo</a>
     &middot;
     <a href="https://github.com/xradmir1/display-image/issues/new?labels=bug">Report Bug</a>
     &middot;
