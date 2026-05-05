@@ -1,3 +1,30 @@
+/*
+ * Copyright (C) 2026 Radmir Xayrullayev
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License.
+ */
+
+/* *Keyframes */
+
+@keyframes jump-gravity {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-1.5rem);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    85% {
+        transform: translateY(-0.3rem);
+    }
+}
+
+
+/* *Styles */
+
 body {
     margin: 0;
     display: flex;
@@ -12,30 +39,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 80%; /* todo : fix sizes */
     height: 80vh;
     background-color: rgba(15, 150, 180, 0.5);
     box-shadow: 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.2);
     transform: translate(0, -8%);
 }
+
+/* *Card Styles */
+
 .card {
     position : relative;
     background-color: white;
     width: 20rem;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.upload {
-    position: absolute;
-    display: flex;
-    transform: translate(0, 295%);
-    scale: 0.5;
-    border-radius: 50%;
 }
 .display-image {
     width: 100%;
@@ -53,9 +76,28 @@ p {
     margin-bottom: 1rem;
     padding: 0 15px;
 }
+
+/* *Upload Button Styles */
+
+.upload {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border: solid 2px #1f314f;
+    border-radius: 50%;
+    margin-top: 45rem;
+    animation: jump-gravity 1.5s infinite;
+}
+.upload:hover {
+    animation-play-state: paused;
+}
 #image-input {
     display: none;
 }
 #upload-icon {
-    scale: 1.3;
+    width: 10rem;
+    height: 10rem;
 }

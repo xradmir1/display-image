@@ -1,8 +1,15 @@
-input = document.getElementById("image-input");
-image = document.getElementById("placeholder-image");
-title = document.getElementById("title");
-description = document.getElementById("description");
-upload_icon = document.getElementById("upload-icon");
+/*
+ * Copyright (C) 2026 Radmir Xayrullayev
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License.
+ */
+
+const input = document.getElementById("image-input");
+const image = document.getElementById("placeholder-image");
+const title = document.getElementById("title");
+const description = document.getElementById("description");
+const upload_icon = document.getElementById("upload-icon");
 
 input.onchange = () => {
     file = input.files[0];
